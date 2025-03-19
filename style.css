@@ -1,0 +1,174 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* 🔹 Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🔹 Layout principal */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🔹 Header */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+/* 🔹 Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* 🔹 Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-size: 36px;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* 🔹 Inputs y botones */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* 🔹 Botón "Agregar" */
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* 🔹 Botón "Sortear" */
+.button-draw {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* 🔹 Listado de nombres */
+.name-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+/* 🔹 Estilos de cada amigo agregado */
+.amigo-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-secondary);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+/* 🔹 Botón de eliminar */
+.btn-eliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn-eliminar:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Footer */
+.footer {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-top: 2px solid #000;
+    width: 100%;
+    font-family: "Merriweather", serif;
+}
+
