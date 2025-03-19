@@ -53,7 +53,7 @@ function actualizarInterfaz() {
         .map(amigo => 
             `<li class="amigo-item">
                 <span>${amigo}</span>
-                <button class="btn-eliminar" onclick="eliminarAmigo('${amigo}')">❌</button>
+                <button class="btn-eliminar" onclick="eliminarAmigo('${amigo}')">✖️</button>
             </li>`
         )
         .join("");
